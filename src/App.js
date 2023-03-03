@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "./logo.svg";
 import Button from '@mui/material/Button';
-import Button from '@mui/material/Alert';
+import Alert from '@mui/material/Alert';
 import "./App.css";
 
 function App(props) {
