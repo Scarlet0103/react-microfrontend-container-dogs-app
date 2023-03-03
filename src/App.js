@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "./logo.svg";
+import Button from '@mui/material/Button';
 import "./App.css";
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
       <header>
         <h3>Doggo of the day</h3>
         <div>
-          <button onClick={() => fetchDoggo()}>New Doggo</button>
+          {/* <button onClick={() => fetchDoggo()}>New Doggo</button> */}
+          <Button onClick={() => fetchDoggo()} variant="contained">New Doggo</Button>
         </div>
         {dogImg !== "" ? (
           <div>
