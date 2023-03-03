@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-window.renderDogs = (containerId, history) => {
+window.renderDogs = (containerId, history, name) => {
   ReactDOM.render(
-    <App history={history} />,
+    <App history={history} name={name} />,
     document.getElementById(containerId),
   );
   serviceWorker.unregister();

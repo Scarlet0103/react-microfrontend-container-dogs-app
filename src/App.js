@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import logo from "./logo.svg";
 import Button from '@mui/material/Button';
+import Button from '@mui/material/Alert';
 import "./App.css";
 
-function App() {
+function App(props) {
   const [dogImg, setDogImg] = useState(null);
 
   const fetchDoggo = () => {
@@ -27,6 +28,7 @@ function App() {
         <h3>Doggo of the day</h3>
         <div>
           {/* <button onClick={() => fetchDoggo()}>New Doggo</button> */}
+          <Alert severity="success">This is a success alert — {props.name}</Alert>
           <Button onClick={() => fetchDoggo()} variant="contained">New Doggo</Button>
         </div>
         {dogImg !== "" ? (
